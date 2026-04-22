@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — KnotStudios</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e0f11;
+    --surface: #16181c;
+    --border: #2a2d34;
+    --accent: #5b8cff;
+    --text: #d4d8e2;
+    --muted: #6b7280;
+    --heading: #f0f2f7;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+
+  /* grid lines background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 48px 48px;
+    opacity: 0.35;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 32px 120px;
+  }
+
+  header {
+    margin-bottom: 64px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 40px;
+  }
+
+  .studio-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 500;
+    color: var(--heading);
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  .meta {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+
+  .meta span { color: var(--accent); }
+
+  section {
+    margin-bottom: 52px;
+  }
+
+  h2 {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  h2::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  p { margin-bottom: 14px; color: var(--text); }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 14px;
+  }
+
+  ul li {
+    padding: 6px 0 6px 20px;
+    position: relative;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+
+  ul li:last-child { border-bottom: none; }
+
+  ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+  }
+
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  footer {
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="studio-label">KnotStudios LLC</div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Last updated <span>April 22, 2026</span> &nbsp;·&nbsp; Effective immediately</div>
+  </header>
+
+  <section>
+    <h2>Overview</h2>
+    <div class="callout">
+      This application is developed and published by KnotStudios LLC. This policy describes what data we collect, why we collect it, and how it is used and protected.
+    </div>
+    <p>
+      This policy applies to all software products, games, and services developed by KnotStudios LLC that are made available through the Meta Horizon Store or any other distribution platform.
+    </p>
+  </section>
+
+  <section>
+    <h2>Data We Collect</h2>
+    <p>We collect the minimum data required to operate the application. This includes:</p>
+    <ul>
+      <li>Your Meta/Oculus user ID and display name, provided by the Meta platform upon login</li>
+      <li>Session tokens used to authenticate your requests to our backend services</li>
+      <li>In-app purchase and transaction records, including SKUs purchased and timestamps</li>
+      <li>In-game inventory and wallet balance associated with your account</li>
+      <li>IP address and user agent at time of login, used for session security</li>
+      <li>Display name changes made within the application</li>
+    </ul>
+    <p>We do not collect your real name, email address, phone number, or any payment card details. Payment processing is handled entirely by Meta.</p>
+  </section>
+
+  <section>
+    <h2>How We Use Your Data</h2>
+    <ul>
+      <li>To authenticate your identity via Meta's platform and maintain your session</li>
+      <li>To store and synchronize your in-game progress, inventory, and currency balance</li>
+      <li>To verify in-app purchases server-side and credit your account accordingly</li>
+      <li>To detect and prevent fraudulent or unauthorized activity</li>
+      <li>To deliver real-time in-game messages and events</li>
+    </ul>
+    <p>We do not use your data for advertising, profiling, or any purpose unrelated to the operation of the application.</p>
+  </section>
+
+  <section>
+    <h2>Data Sharing</h2>
+    <p>We do not sell, rent, or share your personal data with third parties for commercial purposes. Data is shared only as follows:</p>
+    <ul>
+      <li><strong>Meta Platforms, Inc.</strong> — to verify purchases, entitlements, and user identity via Meta's Graph API</li>
+      <li><strong>Supabase, Inc.</strong> — our backend database and authentication infrastructure provider, operating under their own privacy and data processing policies</li>
+    </ul>
+    <p>Both third parties are used solely to operate core application functionality and are bound by their respective data processing agreements.</p>
+  </section>
+
+  <section>
+    <h2>Data Retention</h2>
+    <p>Session tokens expire after 24 hours of inactivity. Expired nonces used for authentication are automatically deleted from our systems.</p>
+    <p>Account data, including inventory and transaction history, is retained for the lifetime of your account. If you wish to have your data deleted, contact us at the address below and we will process your request within 30 days.</p>
+  </section>
+
+  <section>
+    <h2>Security</h2>
+    <p>
+      We implement the following measures to protect your data:
+    </p>
+    <ul>
+      <li>All communication between the application and our servers is encrypted via HTTPS/TLS</li>
+      <li>Session tokens are 256-bit cryptographically random values</li>
+      <li>Authentication is performed server-side using Meta's official verification APIs</li>
+      <li>Row-level security is enforced on all database tables</li>
+      <li>IP blacklisting is applied to known malicious address ranges at login</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Children's Privacy</h2>
+    <p>
+      This application is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data, please contact us and we will delete it promptly.
+    </p>
+  </section>
+
+  <section>
+    <h2>Your Rights</h2>
+    <p>Depending on your jurisdiction, you may have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Request correction of inaccurate data</li>
+      <li>Request deletion of your account and associated data</li>
+      <li>Object to or restrict certain types of processing</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at the address below. We will respond within 30 days.</p>
+  </section>
+
+  <section>
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this privacy policy from time to time. The "Last updated" date at the top of this page will reflect any changes. Continued use of the application after changes are posted constitutes acceptance of the updated policy.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      For privacy-related questions, data deletion requests, or any concerns regarding this policy, contact KnotStudios LLC at:
+    </p>
+    <div class="callout">
+      KnotStudios LLC<br>
+      <a href="mailto:privacy@knotstudios.com">privacy@knotstudios.com</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>KnotStudios LLC &copy; 2026</span>
+    <span>All rights reserved</span>
+  </footer>
+
+</div>
+</body>
+</html>
